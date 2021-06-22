@@ -5,7 +5,7 @@ dialog  --title "Hopper Setup Wizard" --infobox "Welcome. \n\nIf this is your fi
 
 #DIALOG/NCURSES
 HEIGHT=15
-WIDTH=40
+WIDTH=41
 CHOICE_HEIGHT=4
 BACKTITLE="Hopper Setup Wizard"
 TITLE="Installer"
@@ -29,8 +29,11 @@ OPTIONS=(1 "Arch"
 clear
     case $CHOICE in
             1)  
-                sudo pacman -S curl npm flameshot qbittorrent firefox rofi lxapperance thunar tumbler alacritty krita neovim git zsh neofetch
                 bash <( curl -s https://raw.githubusercontent.com/SlippingGitty/Linux-Surface-Wizard/main/SurfaceLinuxSetupWizardArch.sh)
+                git clone https://aur.archlinux.org/yay.git
+                cd yay
+                makepkg -si
+                yay -S discord-canary st curl npm flameshot qbittorrent firefox rofi lxapperance thunar tumbler alacritty krita neovim git zsh neofetch
                 echo Finished.
                 sleep 3
             # Installs the Arch packages I want
