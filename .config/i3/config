@@ -41,7 +41,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec alacritty 
+bindsym $mod+Return exec st 
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -181,8 +181,8 @@ bindsym $mod+r mode "resize"
 bar { 
       position top
       status_command ~/.config/bumblebee-status/bumblebee-status \
- -t gruvbox-powerline \
- -m  memory nic datetime hostname battery_upower 
+ -t iceberg-rainbow \
+ -m  memory datetime hostname battery 
 
  colors {
     	background #000000
@@ -244,14 +244,11 @@ mode "$mode_gaps_outer" {
 #ROFI
 exec $mod+d rofi -show run
 
-# Multi-screen screenshots with scrot
-bindsym --release Print exec scrot 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Pictures/screenshots && mv $f ~/Pictures/screenshots && xclip -selection clipboard -t image/png -i ~/Pictures/screenshots/`ls -1 -t ~/Pictures/screenshots | head -1`' # All screens
-
-# OSX-like area selection screenshots
-bindsym --release Shift+Print exec scrot -s 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Pictures/screenshots && mv $f ~/Pictures/screenshots && xclip -selection clipboard -t image/png -i ~/Pictures/screenshots/`ls -1 -t ~/Pictures/screenshots | head -1`' # Area selection
+#FLAMESHOT
+bindsym Print exec flameshot gui
 
 #Wallpaper
-exec_always feh --bg-scale  Pictures/Wallpapers/walls\ vcx/Cities/hot.jpg
+exec_always feh --bg-scale  Pictures/Wallpapers/walls\ vcx/Cities/*
 
 # Compton Execute
 exec_always picom
