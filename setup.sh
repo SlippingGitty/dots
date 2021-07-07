@@ -29,6 +29,7 @@ OPTIONS=(1 "Arch"
 clear
     case $CHOICE in
             1)  
+                sudo pacman -S curl git
                 bash <( curl -s https://raw.githubusercontent.com/SlippingGitty/Linux-Surface-Wizard/main/SurfaceLinuxSetupWizardArch.sh)
                 git clone https://aur.archlinux.org/yay.git
                 cd yay
