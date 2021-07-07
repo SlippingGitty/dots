@@ -33,8 +33,8 @@ clear
                 bash <( curl -s https://raw.githubusercontent.com/SlippingGitty/Linux-Surface-Wizard/main/SurfaceLinuxSetupWizardArch.sh)
                 git clone https://aur.archlinux.org/yay.git
                 cd yay
-                makepkg -si
-                yay -S discord-canary st curl npm flameshot qbittorrent firefox rofi lxappearance thunar tumbler alacritty krita neovim git zsh neofetch
+                makepkg -si --noconfirm
+                yay -S discord-canary st curl npm flameshot qbittorrent firefox rofi lxappearance thunar tumbler alacritty krita neovim git zsh neofetch --noconfirm
                 echo Finished.
                 sleep 3
             # Installs the Arch packages I want
