@@ -41,7 +41,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec st 
+bindsym $mod+Return exec kitty 
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -198,10 +198,9 @@ bar {
 }
 
 
-
-
-
-
+#######
+## ETC
+#######
 
 smart_borders on
 set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
@@ -248,7 +247,7 @@ exec $mod+d rofi -show run
 bindsym Print exec flameshot gui
 
 #Wallpaper
-exec_always feh --bg-scale  Pictures/Wallpapers/walls\ vcx/Cities/*
+exec_always feh --randomize --bg-fill -  Pictures/Wallpapers/walls\ vcx/Cities/*
 
 # Compton Execute
 exec_always picom
@@ -268,4 +267,3 @@ for_window [class="^.*"] border pixel 1
 
 # Thicker Border Pixel
 for_window [class="^.*"] border pixel 2 
-
