@@ -34,7 +34,7 @@ clear
                 git clone https://aur.archlinux.org/yay.git
                 cd yay
                 makepkg -si --noconfirm
-                yay -S discord-canary st picom blueman steam unzip unrar pavucontrol feh curl npm flameshot qbittorrent google-chrome-stabled rofi lxappearance thunar tumbler alacritty krita neovim git zsh neofetch --noconfirm
+                yay -S cmus steam youtube-dl thunar kdenlive discord-canary st picom blueman steam unzip unrar pavucontrol feh curl npm flameshot qbittorrent google-chrome-stable rofi lxappearance thunar tumbler alacritty krita neovim git zsh neofetch --noconfirm
                 echo Finished.
                 sleep 3
             # Installs the Arch packages I want
