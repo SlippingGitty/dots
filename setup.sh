@@ -22,7 +22,7 @@ while [ "$CHOICE -ne 4" ]; do
 
 #OPTIONS NAMES
 OPTIONS=(1 "Arch"
-         2 "Debian"
+         2 "Ubuntu"
          3 "Quit")
 
 #OPTIONS IN EXECUTION
@@ -38,8 +38,11 @@ clear
                 cd
                 cd .config
                 git clone git://github.com/tobi-wan-kenobi/bumblebee-status
+                sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+                git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+                cd
                 clear
-    dialog  --title "Hopper Setup Wizard" --infobox "Finished. \n\nThis script is done doing it's job. Pray for the best, and expect the worst. \n\nOnce again, you may want to refresh or reboot the computer, depending on your window manager/desktop enviroment." 10 70;sleep 5 
+                dialog  --title "Hopper Setup Wizard" --infobox "Finished. \n\nThis script is done doing it's job. Pray for the best, and expect the worst. \n\nOnce again, you may want to refresh or reboot the computer, depending on your window manager/desktop enviroment." 10 70;sleep 5 
                 sleep 3
             # Installs the Arch packages I want
                 ;;
@@ -51,9 +54,11 @@ clear
                 cd .config
                 git clone git://github.com/tobi-wan-kenobi/bumblebee-status
                 cd
-                clear
-    dialog  --title "Hopper Setup Wizard" --infobox "Finished. \n\nThis script is done doing it's job. Pray for the best, and expect the worst. \n\nOnce again, you may want to refresh or reboot the computer, depending on your window manager/desktop enviroment." 10 70;sleep 5 
+                sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+                git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
                 cd
+                clear
+                dialog  --title "Hopper Setup Wizard" --infobox "Finished. \n\nThis script is done doing it's job. Pray for the best, and expect the worst. \n\nOnce again, you may want to refresh or reboot the computer, depending on your window manager/desktop enviroment." 10 70;sleep 5 
             # Sets everything up
                 ;;
             3)
