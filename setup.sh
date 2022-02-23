@@ -40,7 +40,7 @@ clear
             # Installs the Arch packages I want
                 ;;
             2)
-                sudo apt install curl npm flameshot qbittorrent firefox rofi lxapperance thunar tumbler alacritty krita neovim git zsh neofetch flatpak
+                sudo apt install curl npm flameshot qbittorrent firefox rofi lxappearance thunar tumbler kitty krita neovim git zsh neofetch flatpak
                 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
                 bash <( curl -s https://raw.githubusercontent.com/SlippingGitty/Linux-Surface-Wizard/main/SurfaceLinuxSetupWizard.sh)
                 echo Finished.
