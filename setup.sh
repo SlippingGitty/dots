@@ -51,7 +51,7 @@ clear
                 sudo apt install --assume-yes curl git
                 bash <( curl -s https://raw.githubusercontent.com/SlippingGitty/Linux-Surface-Wizard/main/SurfaceLinuxSetupWizard.sh)
                 sudo add-apt-repository -y ppa:regolith-linux/stable
-                sudo apt install --assume-yes i3-gaps fonts-powerline curl npm flameshot qbittorrent firefox rofi lxappearance thunar tumbler picom unrar feh unzip kitty krita neovim git zsh neofetch flatpak kdenlive blueman steam cmus youtube-dl
+                sudo apt install --assume-yes i3-gaps iwd fonts-powerline curl npm flameshot qbittorrent firefox rofi lxappearance thunar tumbler picom unrar feh unzip kitty krita neovim git zsh neofetch flatpak kdenlive blueman steam cmus youtube-dl
                 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
                 cd .config
                 git clone git://github.com/tobi-wan-kenobi/bumblebee-status
