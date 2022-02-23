@@ -2,6 +2,8 @@
 
 This repo is very specific to me and me only. 
 
+Just for the .sh file: `bash <( curl -s https://raw.githubusercontent.com/SlippingGitty/dots/main/setup.sh)`
+
 ## ❓ What is in here? 
 
 There includes my .config files for i3, and my setup.sh file.
