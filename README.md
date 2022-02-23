@@ -6,7 +6,7 @@ This repo is very specific to me and me only. Don't use this unless you use a Su
 ## 🧑‍⚖️ Prerequisites
 
 * A completed install of Arch Linux or Ubuntu.
-* The packages `git` and `curl`
+* The packages `dialog`, `git`, and `curl`
 
 Just for the .sh file: `bash <( curl -s https://raw.githubusercontent.com/SlippingGitty/dots/main/setup.sh)`
 
