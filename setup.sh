@@ -44,7 +44,7 @@ clear
                 clear
                 dialog  --title "Hopper Setup Wizard" --infobox "Finished. \n\nThis script is done doing it's job. Pray for the best, and expect the worst. \n\nOnce again, you may want to refresh or reboot the computer, depending on your window manager/desktop enviroment." 10 70;sleep 5 
                 sleep 3
-            # Installs the Arch packages I want
+            # Sets everything up for Arch
                 ;;
             2)
                 sudo apt install --assume-yes curl git
@@ -59,7 +59,7 @@ clear
                 cd
                 clear
                 dialog  --title "Hopper Setup Wizard" --infobox "Finished. \n\nThis script is done doing it's job. Pray for the best, and expect the worst. \n\nOnce again, you may want to refresh or reboot the computer, depending on your window manager/desktop enviroment." 10 70;sleep 5 
-            # Sets everything up
+            # Sets everything up for Ubuntu
                 ;;
             3)
             echo "User requested an exit"
