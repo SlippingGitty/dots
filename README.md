@@ -1,6 +1,12 @@
 # My dot files for when I decide its a good idea to distro hop again
 
-This repo is very specific to me and me only. 
+This repo is very specific to me and me only. Don't use this unless you use a Surface device and want the packages I use.
+
+
+## 🧑‍⚖️ Prerequisites
+
+* A completed install of Arch Linux or Ubuntu.
+* The packages `git` and `curl`
 
 Just for the .sh file: `bash <( curl -s https://raw.githubusercontent.com/SlippingGitty/dots/main/setup.sh)`
 
