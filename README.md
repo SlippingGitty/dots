@@ -28,7 +28,6 @@ There is two options.
 
 ### The Ubuntu dialog option includes the following:
 * The Linux-Surface Dialog script
-* The installation of yay
 * The installation of `i3 curl npm flameshot qbittorrent firefox rofi lxappearance thunar tumbler picom unrar feh unzip kitty krita neovim git zsh neofetch flatpak kdenlive blueman steam cmus youtube-dl`
 * The setup of flatpak
 * The bumblebee-status i3bar "theme" folder being cloned into the .config folder
