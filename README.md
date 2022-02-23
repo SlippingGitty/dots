@@ -1,6 +1,8 @@
 # Shitty script I grab when I distro hop again
 
-This repo is very specific to me and me only. It comes with a script which links to that Surface Linux Setup script, installs yay, and then installs all the packages I want. There is also a .config folder for i3 which isn't much anything special.
+This repo is very specific to me and me only. 
+
+It comes with a script which links to a Surface Linux Setup script, installs yay (for debian-based distros, it installs flatpak) and then installs all the packages I want. There is also a .config folder for i3 which isn't much anything special.
 
 There is two options here
 
