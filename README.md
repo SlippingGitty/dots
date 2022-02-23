@@ -2,12 +2,12 @@
 
 This repo is very specific to me and me only. 
 
-It comes with a script which links to a Surface Linux Setup script, installs yay (for debian-based distros, it installs flatpak) and then installs all the packages I want. There is also a .config folder for i3 which isn't much anything special.
+It comes with a script which links to a Surface Linux Setup script, installs yay (for Ubuntu, it installs flatpak) and then installs all the packages I want. There is also a .config folder for i3 which isn't much anything special.
 
 There is two options here
 
 * Arch
-* Debian
+* Ubuntu
 
 Arch has more stuff in it cause more often than not I'm using Arch or something that is Arch based. 
 
