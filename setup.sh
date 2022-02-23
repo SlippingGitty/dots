@@ -22,7 +22,7 @@ while [ "$CHOICE -ne 4" ]; do
 
 #OPTIONS NAMES
 OPTIONS=(1 "Arch"
-         2 "Debian"
+         2 "Ubuntu"
          3 "Quit")
 
 #OPTIONS IN EXECUTION
