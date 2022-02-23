@@ -22,7 +22,7 @@ while [ "$CHOICE -ne 4" ]; do
 
 #OPTIONS NAMES
 OPTIONS=(1 "Arch"
-         2 "Ubuntu"
+         2 "Debian"
          3 "Quit")
 
 #OPTIONS IN EXECUTION
@@ -34,19 +34,26 @@ clear
                 git clone https://aur.archlinux.org/yay.git
                 cd yay
                 makepkg -si --noconfirm
-                yay -S cmus steam youtube-dl thunar kdenlive discord-canary st picom blueman steam unzip unrar pavucontrol feh curl npm flameshot qbittorrent google-chrome-stable rofi lxappearance thunar tumbler alacritty krita neovim git zsh neofetch --noconfirm
-                echo Finished.
+                yay -S cmus steam youtube-dl thunar kdenlive discord-canary picom blueman steam unzip unrar pavucontrol feh curl npm flameshot qbittorrent google-chrome-stable rofi lxappearance thunar tumbler alacritty krita neovim git zsh neofetch --noconfirm
+                cd
+                cd .config
+                git clone git://github.com/tobi-wan-kenobi/bumblebee-status
+                clear
+    dialog  --title "Hopper Setup Wizard" --infobox "Finished. \n\nThis script is done doing it's job. Pray for the best, and expect the worst. \n\nOnce again, you may want to refresh or reboot the computer, depending on your window manager/desktop enviroment." 10 70;sleep 5 
                 sleep 3
             # Installs the Arch packages I want
                 ;;
             2)
-                sudo apt install curl npm flameshot qbittorrent firefox rofi lxappearance thunar tumbler kitty krita neovim git zsh neofetch flatpak
+                sudo apt install --assume-yes curl npm flameshot qbittorrent firefox rofi lxappearance thunar tumbler picom unrar feh unzip kitty krita neovim git zsh neofetch flatpak kdenlive blueman steam cmus youtube-dl
                 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
                 bash <( curl -s https://raw.githubusercontent.com/SlippingGitty/Linux-Surface-Wizard/main/SurfaceLinuxSetupWizard.sh)
-                echo Finished.
-                sleep 3
+                cd .config
+                git clone git://github.com/tobi-wan-kenobi/bumblebee-status
                 cd
-            # Installs all the Debian packages I want
+                clear
+    dialog  --title "Hopper Setup Wizard" --infobox "Finished. \n\nThis script is done doing it's job. Pray for the best, and expect the worst. \n\nOnce again, you may want to refresh or reboot the computer, depending on your window manager/desktop enviroment." 10 70;sleep 5 
+                cd
+            # Sets everything up
                 ;;
             3)
             echo "User requested an exit"
