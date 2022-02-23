@@ -25,12 +25,14 @@ There is two options.
 * The installation of yay
 * The installation of `i3 cmus steam youtube-dl thunar kdenlive discord-canary picom blueman steam unzip unrar pavucontrol feh curl npm flameshot qbittorrent google-chrome-stable rofi lxappearance thunar tumbler alacritty krita neovim git zsh neofetch`
 * The bumblebee-status i3bar "theme" folder being cloned into the .config folder
+* The installation of ohmyzsh and powerline-zsh
 
 ### The Ubuntu dialog option includes the following:
 * The Linux-Surface Dialog script
 * The installation of `i3 curl npm flameshot qbittorrent firefox rofi lxappearance thunar tumbler picom unrar feh unzip kitty krita neovim git zsh neofetch flatpak kdenlive blueman steam cmus youtube-dl`
 * The setup of flatpak
 * The bumblebee-status i3bar "theme" folder being cloned into the .config folder
+* The installation of ohmyzsh and powerline-zsh
 
 ___
 
