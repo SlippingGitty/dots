@@ -34,7 +34,7 @@ clear
                 git clone https://aur.archlinux.org/yay.git
                 cd yay
                 makepkg -si --noconfirm
-                yay -S cmus steam youtube-dl thunar kdenlive discord-canary picom blueman steam unzip unrar pavucontrol feh curl npm flameshot qbittorrent google-chrome-stable rofi lxappearance thunar tumbler alacritty krita neovim git zsh neofetch --noconfirm
+                yay -S i3 cmus steam youtube-dl thunar kdenlive discord-canary picom blueman steam unzip unrar pavucontrol feh curl npm flameshot qbittorrent google-chrome-stable rofi lxappearance thunar tumbler alacritty krita neovim git zsh neofetch --noconfirm
                 cd
                 cd .config
                 git clone git://github.com/tobi-wan-kenobi/bumblebee-status
@@ -46,7 +46,7 @@ clear
             2)
                 sudo apt install --assume-yes curl git
                 bash <( curl -s https://raw.githubusercontent.com/SlippingGitty/Linux-Surface-Wizard/main/SurfaceLinuxSetupWizard.sh)
-                sudo apt install --assume-yes curl npm flameshot qbittorrent firefox rofi lxappearance thunar tumbler picom unrar feh unzip kitty krita neovim git zsh neofetch flatpak kdenlive blueman steam cmus youtube-dl
+                sudo apt install --assume-yes i3 curl npm flameshot qbittorrent firefox rofi lxappearance thunar tumbler picom unrar feh unzip kitty krita neovim git zsh neofetch flatpak kdenlive blueman steam cmus youtube-dl
                 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
                 cd .config
                 git clone git://github.com/tobi-wan-kenobi/bumblebee-status
